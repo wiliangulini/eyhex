@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Magnifica Questionnaire Form Wizard includes Coronavirus Health questionnaire">
+    <meta name="author" content="Ansonika">
+    <title>Eyhe - Conversas acolhedoras em minutos</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+	   <link href="css/menu.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+       <link href="css/vendors.css" rel="stylesheet">
+       <link rel="stylesheet" href="css/style-espera.css" />
+       <link rel="stylesheet" href="css/style-card.css" />
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+	<!-- MODERNIZR MENU -->
+	<script src="js/modernizr.js"></script>
+
+  <style>
+
+   #aguardando_anjo {
+     display: none;
+     padding: 60px;
+     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     background: url(img/pattern_1.png) repeat;
+     position: relative;
+   }
+   @media (max-width: 767px) {
+     #aguardando_anjo {
+       padding: 30px;
+     }
+   }
+
+   #card_anjo {
+     display: none;
+     padding: 60px;
+     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     background: url(img/pattern_1.png) repeat;
+     position: relative;
+   }
+   @media (max-width: 767px) {
+     #card_anjo {
+       padding: 30px;
+     }
+   }
+
+  .botao-destaque{
+      color: #000 !important;
+      background-color: #f8bd2c !important;
+  }
+  .botao-destaque:hover{
+      border: none;
+  }
+
+  .botao-desk{
+    display: none!important;
+  }
+  .botao-mobile{
+    display: block!important;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .botao-desk{
+      display: block!important;
+    }
+    .botao-mobile{
+      display: none!important;
+    }
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+
+	<header>
+		<div class="container">
+		    <div class="row">
+                <div class="col-3">
+                     <a href="index.php"><img src="img/eyhelogo.png" alt="" width="120" height="83" class="d-none d-md-block"><img src="img/eyhelogo.png" alt="" width="62" height="45" class="d-block d-md-none"></a>
+                </div>
+                <div class="col-9">
+                    <div id="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/eyheoficial/" target="_blank"><i class="icon-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/EyheOficial" target="_blank"><i class="icon-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/eyheoficial/" target="_blank"><i class="icon-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /social -->
+					<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+					<!-- /menu button -->
+                    <nav>
+						<ul class="cd-primary-nav">
+							<li><a href="index.html" class="animated_link">HOME - Converse Agora</a></li>
+                            <li><a href="faq.html" class="animated_link">Como Funciona</a></li>
+                            <li><a href="prevention.html" class="animated_link">Motivos para usar o Eyhe</a></li>
+						</ul>
+					</nav>
+					<!-- /menu -->
+                </div>
+            </div>
+		</div>
+		<!-- /container -->
+	</header>
+	<!-- /Header -->
+
+	<div class="container">
+    <div id="form_container">
+        <div class="row no-gutters">
+            <div class="col-lg-4 mobilenulo" style="background-color: #2d7aea;">
+                <figure><img src="img/ilustracao.png" alt="" width="100%"></figure>
+                <div id="left_form">
+                    <h2>Conversas acolhedoras em minutos</h2>
+                    <p>O Eyhe tem mais de <b>100 pessoas</b> devidamente preparados para uma conversa sem julgamentos e <b>cheia de empatia</b>. Conversas de 40min por apenas <b>R$14.90</b>.</p>
+                    <a href="#wizard_container" class="botao-destaque btn_1 rounded yellow botao-mobile" style="display: none;">Converse Agora</a>
+                    <br/>
+                    <center>
+                      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Feyheoficial%2F&width=211&layout=button_count&action=like&size=large&share=true&height=46&appId=406704176096401" width="211" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div id="wizard_container">
+                    <div id="top-wizard">
+                        <div id="progressbar"></div>
+                        <span id="location"></span>
+                    </div>
+                    <!-- /top-wizard -->
+                    <form id="wrapped" method="post">
+                        <input id="website" name="website" type="text" value="">
+                        <!-- Leave for security protection, read docs for details -->
+                        <div id="middle-wizard">
+
+
+                             <!-- ETAPA 0 !-->
+                            <div class="step">
+                                <h3 class="main_question"><i class="arrow_right"></i>Olá, seja bem-vindo. Vamos iniciar seu atendimento:</h3>
+                                <div class="form-group add_top_30">
+                                    <label for="name">Nome Completo</label>
+                                    <input type="text" name="nome" id="name" class="form-control required" onchange="getVals(this, 'name_field');">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control required" onchange="getVals(this, 'email_field');">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-5">
+                                        <label for="age">Idade</label>
+                                        <div class="form-group radio_input">
+                                            <input type="number" name="idade" id="age" class="form-control required">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-5 col-7">
+                                        <div class="idade form-group radio_input">
+                                            <label class="container_radio mr-3">Masculino
+                                                <input type="radio" name="sexo" value="masculino" class="required">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container_radio">Feminino
+                                                <input type="radio" name="sexo" value="feminino" class="required">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /row-->
+                            </div>
+                            <!-- /step-->
+
+                            <!-- ETAPA 1 !-->
+                            <div class="step">
+                                <h3 class="main_question"><i class="arrow_right"></i>Por qual problema está passando?</h3>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="container_check version_2">Ansiedade/Depressão
+                                                <input type="radio" name="assunto" value="Depressão / Ansiedade" class="required" checked>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="container_check version_2">Relacionamento
+                                                <input type="radio" name="assunto" value="Relacionamento" class="required">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="form-group">
+                                          <label class="container_check version_2">Vícios/Dependências
+                                              <input type="radio" name="assunto" value="Vícios / Dependências" class="required">
+                                              <span class="checkmark"></span>
+                                          </label>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="container_check version_2">Outro Assunto
+                                              <input type="radio" name="assunto" value="Outro / Não sei responder" class="required">
+                                              <span class="checkmark"></span>
+                                          </label>
+                                      </div>
+                                    </div>
+                                </div>
+                                <!-- /row -->
+                            </div>
+                            <!-- /step-->
+
+                            <!--ETAPA 2-->
+
+                            <div class="step">
+                                <h3 class="main_question" style="font-size: 16px;"><i class="arrow_right"></i>
+                                  Você terá <strong>10 minutos GRÁTIS</strong> antes da confirmação do pagamento de <strong>R$14,90.</strong> Vamos começar?
+                                  </h3>
+                                <div class="form-group">
+                                    <label class="container_radio version_2">Sim, vamos começar
+                                        <input type="radio" id="naodesistir" checked name="question_2" value="Yes" class="required">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container_radio version_2">Não, prefiro desistir.
+                                        <input type="radio" id="desistir" name="question_2" value="No" class="required" data-toggle="modal" data-target="#modal">
+                                        <span class="checkmark" ></span>
+                                    </label>
+                                </div>
+                                <div class="modal" id="modal" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Título do modal</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p><strong>Ei, espere! </strong>Nós queremos te ajudar. Utilize o cupom e ganhe 25% de desconto</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                <br/>
+                                <center><p>
+                                  <img src="img/gratis.png" width="50" />Você tem <strong style="color: #2d7aea;">10 minutos grátis </strong> para sua primeira conversa
+                                </p></center>
+
+                                <center><p>
+                                  Utilize nosso cupom de desconto <strong style="color: #2d7aea;">EYHE25</strong> e ganhe 25% OFF
+                                </p></center>
+
+
+
+                            </div>
+
+
+                             <!--ETAPA 4 -->
+
+                             <div class="submit step" id="end">
+                                <h3 class="main_question"><i class="arrow_right"></i>Você entrará numa sala de espera (1 á 5 minutos). Informe seu telefone pra gente avisar você por SMS quando um Anjo chegar</h3>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="confirme_telefone">Confirme seu telefone</label>
+                                            <input type="tel" name="telefone" id="confirme_telefone" class="form-control required" >
+                                         </div>
+                                    </div>
+                                    <input type="hidden" name="tipo" class="form-control required" value="1">
+                                </div>
+
+                            </div>
+
+                            <!-- /step last-->
+
+                        </div>
+                        <!-- /middle-wizard -->
+                        <div id="bottom-wizard">
+                            <button type="button" name="anterior" class="backward">Voltar</button>
+                            <button type="button" name="proximo" class="forward">Continuar</button>
+                            <button type="submit" name="submit" class="submit" id="iniciar">Conversar</button>
+                            <br/><br/><br/>
+                        </div>
+                        <!-- /bottom-wizard -->
+                    </form>
+                </div>
+
+                <div id="aguardando_anjo">
+                  <!--<center>
+                    <br/><br/><br/><br/>
+                    <h5 style="color: #1c7cff; padding: 20px;" id="titulo-sala-de-espera"></h5>
+                    <br/><br/>
+                    <img src="img/buscando.gif" />
+                    <br/><br/><br/>
+                    <p id="frase-troca"></p>
+                    <br/><br/><br/><br/><br/><br/><br/>
+                  </center>-->
+                  <div class="container espera">
+                    <div class="row timer">
+                        <div class="col-md-6 col-sm-6 col-lg-8 frase1">
+                            <h1 style="font-size: 28px !important; color: #007bff;">Nós nunca deixamos de atender!</h1>
+                            <p>O tempo de espera para o seu atendimento é de no máximo <strong>5 minutos.</strong> Por favor não atualize seu navegador!</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6  clock">
+                            <div id="circle-1" data-circle-dialWidth=10 data-circle-skin="yellow">
+                                <div class="loader-bg">
+                                    <div class="text">00:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6  position justify-content-around">
+                            <p style="margin-top: 22px!important;">Sua posição na fila é:</p>
+                            <div id="position" class="position">05</div>
+                        </div>
+                        <div class="col-md-6 col-sm-6  picture">
+                            <p style="font-size: 13px;" id="frase-troca"></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="card_anjo">
+                    <div class="container card">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-8 col-lg-8 one">
+                                <h1>Olha que incrível! Você acabou de ser acolhido</h1>
+                                <h6>Você tem <strong>10 minutos grátis, </strong>seu anjo está lhe esperando no chat.</h6>
+                            </div>
+                            <div class="row row2">
+                                <div class="avatar col-md-6 col-sm-8 col-lg-8">
+                                    <img src="" id="avatar" />
+                                </div>
+                                <div class="col-md-6 col-sm-8 col-lg-8">
+                                    <h1 id="h1"></h1>
+                                    <p class="ptitle">Esse anjo já atendeu <strong style="color: #007bff;"> <strong id="qtd"></strong> pessoas</strong></p>
+                                    <p class="ptitle1"></p>
+                                    <p>Eu converso sobre:</p>
+                                    <div class="tags">
+                                        <div class="row tag">
+                                            <p class="ans"></p>
+                                            <p class="rel"></p>
+                                        </div>
+                                        <div class="row tag2"><p class="auto"></p></div>
+                                    </div>
+                                </div>
+                                <div class="link">
+                                    <a class="a" href="" target="_blank" id="iniciar_chat">Iniciar Conversa
+                                    <picture>
+                                        <source srcset="img/AnyConv.com__send_check-01.webp" type="image/webp" />
+                                        <source srcset="img/send_check-01.png" type="image/png" />
+                                        <img src="img/send_check-01.png" />
+                                    </picture>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-sm-8">
+                                    <div class="star">
+                                        <p>Últimas Avaliações</p>
+                                        <picture>
+                                            <source srcset="img/AnyConv.com__send_star-01.webp" type="image/webp" />
+                                            <source srcset="img/send_star-01.png" type="image/png" />
+                                            <img src="img/send_star-01.png" />
+                                        </picture>
+                                    </div>
+                                    <div id="f1" class="frase" >
+                                        <p class="f1" style="font-style: oblique"></p>
+                                    </div>
+                                    <div id="f2" class="frase">
+                                        <p class="f2" style="font-style: oblique"></p>
+                                    </div>
+                                </div>
+                                <center>
+                                  <p>Não gostou desse Anjo(a)? </p>
+                                  <a href="eyhe.html" class="btn btn-danger btn-sm" id="buscar_outro_anjo">BUSCAR OUTRO ANJO</a>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Wizard container -->
+            </div>
+        </div><!-- /Row -->
+    </div><!-- /Form_container -->
+</div>
+<!-- /container -->
+
+<div class="container">
+    <footer id="home" class="clearfix">
+        <p>© 2020 Eyhe</p>
+        <ul>
+            <li><a href="index.php" class="animated_link">HOME - Converse Agora</a></li>
+            <li><a href="faq.html" class="animated_link">Como Funciona</a></li>
+            <li><a href="prevention.html" class="animated_link">Motivos para usar o Eyhe</a></li>
+        </ul>
+    </footer>
+    <!-- end footer-->
+</div>
+<!-- /container -->
+
+<div class="cd-overlay-nav">
+    <span></span>
+</div>
+<!-- /cd-overlay-nav -->
+<div class="cd-overlay-content">
+    <span></span>
+</div>
+<!-- /cd-overlay-content -->
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- Modal info -->
+	<div class="modal fade" id="more-info" tabindex="-1" role="dialog" aria-labelledby="more-infoLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="more-infoLabel">Frequently asked questions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/common_scripts.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/common_functions.js"></script>
+
+
+	<!-- Wizard script-->
+    <script src="js/func_1.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script>
+
+        var fila = Math.floor(Math.random() * 5 + 1);
+
+        var txt = 'Fique aqui, nós nunca deixamos de atender. <br/>Você é o '+fila+'º da fila de espera.';
+        $('#titulo-sala-de-espera').html(txt);
+
+        /* CUIDA DO TROCA DE TEXTO */
+        var texts = new Array();
+        texts.push('Estamos buscando o Anjo que melhor se encaixa em seu perfil. Aguarde alguns instantes');
+        texts.push("Acabamos de notificar dezenas de Anjos espalhados pelo Brasil, prontos para lhe atender e que já passaram por problemas semelhantes.");
+        texts.push("Isso pode demorar de 1 à 5 minutos. Em alguns horários a procura é grande e nossos anjos podem estar ocupados.");
+        texts.push("Mais de 4000 pessoas já superaram seus desafios com a ajuda do Eyhe e tudo isso, gastando pouco e sem sair de casa :D");
+        texts.push("Seja paciente, Anjos são pessoas reais com vidas reais, as vezes demora um pouquinho, mas o Eyhe nunca deixa de atender.");
+        texts.push("Que tal tomar um chá, respirar e se preparar para ter uma conversa realmente sincera e aberta com nossos Anjos? Logo logo você será atendido.");
+        texts.push("Parece que você ainda não foi atendido. Acabamos de notificar mais Anjos, aguarde mais alguns instantes. ");
+        texts.push("O Eyhe é uma plataforma de conexão e suporte emocional, você é o próximo na fila de atendimentos :D");
+        texts.push("Alguns detalhes importantes antes de começar seu atendimento: O Eyhe é totalmente seguro e as conversas são criptografadas o/");
+        texts.push("Além disso, caso a conversa não seja como você esperou ou aconteça algo de ruim, você pode pedir reembolso e o faremos em até 24 horas.");
+        texts.push("Nossos Anjos são muito bem preparados para te ouvir, ajudar e compartilhar experiências. Aproveite seu atendimento e faça dele uma ferramenta de evolução pessoal.");
+        var point = 0;
+        function troca_de_frases(){
+          $("#frase-troca").html(texts[point]);
+          if(point < texts.length - 1) point ++;
+          //else point = 0;
+        }
+
+        /* ------ */
+
+        var idUBER;
+        var repetir;
+        var template;
+        var output;
+
+        function envia_notificacao_manager(id){
+          $.ajax({
+              type: "POST",
+              url: "API/dispara_notificacao_manager_uber.php",
+              data: {id_solicitacao: id},
+              success: function(data)
+              {
+                //alert(data);
+              }
+          });
+        }
+
+        function avisa_heroi_que_anjo_chegou(id, link){
+          $.ajax({
+              type: "POST",
+              url: "API/dispara_notificacao_para_heroi_que_anjo_chegou.php",
+              data: {id_solicitacao: id, link_chat: link },
+              success: function(data)
+              {
+                //alert(data);
+              }
+          });
+        }
+
+        function ouvir_resposta(){
+          //alert("Ouvindo respostas dos anjos para o pedido: "+idUBER);
+          $.ajax({
+              type: "POST",
+              url: "API/retorna_infos_solicitacao_uber.php",
+              data: {id_solicitacao: idUBER},
+              success: function(retorno)
+              {
+                //alert(retorno);
+                //console.log(retorno);
+                retorno = JSON.parse(retorno);
+                if(retorno[0].talking != 0){
+                  clearInterval(repetir);
+                  $('#aguardando_anjo').hide();
+                  $('#card_anjo').show();
+
+                  var v_biografia = retorno[0].biografiaanjo;
+                  var v_textovitrini = retorno[0].textovitrini;
+                  var v_desafio1 = retorno[0].desafio1;
+                  var v_desafio2 = retorno[0].desafio2;
+                  var v_desafio3 = retorno[0].desafio3;
+                  var v_nome = retorno[0].nomeanjo;
+                  var v_avatar = '../painel/'+retorno[0].avataranjo;
+                  var idanjo = retorno[0].talking;
+                  var sessao = retorno[0].sessao;
+                  var tabela = retorno[0].tabela;
+                  var qtd = retorno[0].qtdatendimentos;
+                  var avaliacao1 = retorno[0].avaliacao1;
+                  var avaliacao2 = retorno[0].avaliacao2;
+                  var v_permalink = 'https://www.eyhe.com.br/chat/index_u.php?myid='+idUBER+'&idanjo='+idanjo+'&room='+sessao+'&where='+tabela;
+                  //avisa_heroi_que_anjo_chegou(idUBER, v_permalink);
+
+                  $("#avatar").attr('src',v_avatar);
+                  $("#h1").html(v_nome);
+                  $(".ptitle1").html(v_textovitrini);
+                  $(".a").attr('href',v_permalink);
+                  $(".ans").html(v_desafio1);
+                  $(".rel").html(v_desafio2);
+                  if(v_desafio3 != null){
+                     $(".auto").html(v_desafio3);
+                  }
+                  $(".f1").html(avaliacao1);
+                  $(".f2").html(avaliacao2);
+                  $("#qtd").html(qtd);
+                }
+              }
+          });
+        }
+
+
+        //ENVIA SOLICITAÇÃO DO idUBER
+        $(function(){
+            $('#wrapped').bind('submit', function(e){
+                //alert('solicitacao enviada ao Eyhex ');
+                e.preventDefault();
+                var dados = $(this).serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "API/recebe_solicitacao_uber.php",
+                    data: dados,
+                    success: function(retorno)
+                    {
+                      idUBER = retorno;
+                      //alert("IDUBER: "+idUBER);
+                      if(retorno != null){
+                        $('#wizard_container').hide();
+                        $('#aguardando_anjo').show();
+                        $.ajax({
+                            type: "POST",
+                            url: "API/dispara_notificacao_anjos_uber.php",
+                            data: {id_solicitacao: retorno},
+                            success: function(data)
+                            {
+                             //alert(data);
+                            }
+                        });
+                        repetir = setInterval('ouvir_resposta()', 3000);
+                        envia_notificacao_manager(retorno);
+                        troca_de_frases();
+                        setInterval(troca_de_frases, 15000)
+                      }
+                    }
+                });
+            });
+        });
+
+        $( "#desistir" ).click(function() {
+        
+          $(".forward").attr("disabled", true);
+        });
+
+        $( "#naodesistir" ).click(function() {
+          $(".forward").attr("disabled", false);
+        });
+
+        //mascara para telefone
+
+        $("#confirme_telefone").mask("(99) 99999999?9").focusout(function (event) {
+            var target, phone, element;
+            target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+            phone = target.value.replace(/\D/g, '');
+            element = $(target);
+            element.unmask();
+            if(phone.length > 10) {
+                element.mask("(99) 99999999?9");
+            } else {
+                element.mask("(99) 99999999?9");
+            }
+        });
+
+        $("#phone_").mask("(99) 99999999?9").focusout(function (event) {
+            var target, phone, element;
+            target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+            phone = target.value.replace(/\D/g, '');
+            element = $(target);
+            element.unmask();
+            if(phone.length > 10) {
+                element.mask("(99) 99999999?9");
+            } else {
+                element.mask("(99) 99999999?9");
+            }
+        });
+
+
+
+
+    </script>
+    <script src="js/script-espera.js"></script>
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/67fb4311-a027-4bb2-99c4-c9293e97b637-loader.js" ></script>
+
+</body>
+</html>

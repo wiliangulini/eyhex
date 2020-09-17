@@ -1,0 +1,293 @@
+.page {
+	width: 100%;
+	background: #000;
+}
+.page > h1 {
+	font-weight: 300 !important;
+	color: #fff;
+	font-size: 34px;
+	margin: 0;
+}
+.loader {
+	position: relative;
+	user-select: none;
+	box-sizing: border-box;
+	width: 150px;
+	height: 150px;
+}
+.loader-bg {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 5px solid #eeeeee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.spinner-holder-one {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 50%;
+	height: 50%;
+	background: transparent;
+	box-sizing: border-box;
+}
+.spinner-holder-two {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	box-sizing: border-box;
+}
+.loader-spinner {
+	width: 200%;
+	height: 200%;
+	border-radius: 50%;
+	border: 5px solid rgb(135, 206, 235);
+	box-sizing: border-box;
+}
+.animate-0-25-a {
+	transform: rotate(90deg);
+	transform-origin: 100% 100%;
+}
+.animate-0-25-b {
+	transform: rotate(-90deg);
+	transform-origin: 100% 100%;
+}
+.animate-25-50-a {
+	transform: rotate(180deg);
+	transform-origin: 100% 100%;
+}
+.animate-25-50-b {
+	transform: rotate(-90deg);
+	transform-origin: 100% 100%;
+}
+.animate-50-75-a {
+	transform: rotate(270deg);
+	transform-origin: 100% 100%;
+}
+.animate-50-75-b {
+	transform: rotate(-90deg);
+	transform-origin: 100% 100%;
+}
+.animate-75-100-a {
+	transform: rotate(0deg);
+	transform-origin: 100% 100%;
+}
+.animate-75-100-b {
+	transform: rotate(-90deg);
+	transform-origin: 100% 100%;
+}
+
+.matte .loader-bg {
+	border-color: rgba(255, 255, 255, 0.4);
+	box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.6);
+}
+.matte .text {
+	color: rgba(20, 20, 20) !important;
+	font-weight: bold;
+}
+.matte .loader-spinner {
+	border-color: rgba(20, 20, 20);
+}
+
+.loader-bg {
+	border-color: rgba(255, 255, 255, 0.4);
+	box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.6);
+}
+.loader-spinner {
+	border-color: rgb(135, 206, 235);
+}
+.yellow .loader-bg {
+	border-color: rgba(255, 255, 255, 0.1);
+	box-shadow: inset 2px 2px 20px 0 rgba(0, 0, 0, 0.1) !important;
+}
+.yellow .text {
+	font-size: 20px;
+	color: #007bff !important;
+}
+.yellow .loader-spinner {
+	border-color: #007bff;
+}
+.yellow.circle-loaded-75 .text {
+	color: #007bff !important;
+}
+.yellow.circle-loaded-75 .loader-spinner {
+	border-color: #007bff;
+}
+
+
+.page > h1 {
+  font-weight: 300 !important;
+  color: #fff;
+  font-size:34px;
+  margin:0;
+}
+.circles-container {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.loader {
+    position: relative;
+    user-select: none;
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+}
+.loader-bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner-holder-one {
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+    background: transparent;
+    box-sizing: border-box;
+}
+.spinner-holder-two {
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-sizing: border-box;
+}
+.loader-spinner {
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    border: 5px solid rgb(135, 206, 235);
+    box-sizing: border-box;
+}  
+.animate-0-25-a {
+    transform: rotate(90deg);
+    transform-origin: 100% 100%;
+}
+.animate-0-25-b {
+    transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+}
+.animate-25-50-a {
+    transform: rotate(180deg);
+    transform-origin: 100% 100%;
+}
+.animate-25-50-b {
+    transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+}
+.animate-50-75-a {
+    transform: rotate(270deg);
+    transform-origin: 100% 100%;
+}
+.animate-50-75-b {
+    transform: rotate(-90deg);
+    transform-origin:100% 100%;
+}
+.animate-75-100-a {
+    transform: rotate(0deg);
+    transform-origin: 100% 100%;
+}
+.animate-75-100-b {
+    transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+}
+.yellow .loader-bg {
+  border-color: rgba(255,255,255,0.1);
+  box-shadow: inset 2px 2px 20px 0 rgba(0,0,0,0.1) !important;
+}
+.yellow .text {
+  font-size: 20px;
+  color: #007bff !important;
+}
+.yellow .loader-spinner {
+  border-color: #007bff;
+}
+.yellow.circle-loaded-75 .text {
+  color: #007bff !important;
+}
+.yellow.circle-loaded-75 .loader-spinner {
+  border-color: #007bff;
+}
+
+
+h1 {
+	font-size: 32px!important;
+}
+h6 {
+	font-size: 20px !important;
+}
+.container.espera .row.timer,
+.container.espera .row.timer .col-md-6.col-sm-6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container.espera .row.timer .col-md-6.col-sm-6.frase1 {
+	margin-top: 20px;
+}
+.container.espera .row.timer .col-md-6.col-sm-6.frase1,
+.container.espera .row.timer .col-md-6.col-sm-6.clock,
+.container.espera .row.timer .col-md-6.col-sm-6.position.justify-content-around {
+	margin-bottom: 50px;
+}
+.container.espera .row.timer .col-md-6.col-sm-6 {
+	text-align: center;
+}
+.container.espera .row.timer .col-md-6.col-sm-6.picture,
+.container.espera .row.timer .col-md-6.col-sm-6.position {
+	flex-direction: row;
+}
+.container.espera .row.timer .col-md-6.col-sm-6.position .position {
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 4px 25px;
+}
+.container.espera .row.timer .col-md-6.col-sm-6.picture picture img {
+	width: 50px;
+}
+.container.espera .row.timer .col-md-6.col-sm-6.position h6,
+.container.espera .row.timer .col-md-6.col-sm-6.picture h6 {
+	margin: 0;
+}
+.container.espera .row.timer .col-md-6.col-sm-6.picture h6{
+	font-size: 13px !important;
+}
+@media only screen and (min-width:320px) and (max-width:767px) {
+	html {
+		height: 100%;	
+	}
+	body {
+		height: 100%;
+	}
+	.container.espera .row.timer {
+		height: 100%;
+		justify-content: space-around !important;
+	}
+	body .container.espera {
+	height: 100%;
+    background-image: url(../img/send_fundo.jpg);
+	background-size: 100% auto;
+	}
+}

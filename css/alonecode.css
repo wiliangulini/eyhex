@@ -1,0 +1,54 @@
+
+   #aguardando_anjo {
+     display: none;
+     padding: 60px;
+     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     background: url(img/pattern_1.png) repeat;
+     position: relative;
+   }
+   @media (max-width: 767px) {
+     #aguardando_anjo {
+       padding: 30px;
+     }
+   }
+
+   #card_anjo {
+     display: none;
+     padding: 60px;
+     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+     background: url(img/pattern_1.png) repeat;
+     position: relative;
+   }
+   @media (max-width: 767px) {
+     #card_anjo {
+       padding: 30px;
+     }
+   }
+
+  .botao-destaque{
+      color: #000 !important;
+      background-color: #f8bd2c !important;
+  }
+  .botao-destaque:hover{
+      border: none;
+  }
+
+  .botao-desk{
+    display: none!important;
+  }
+  .botao-mobile{
+    display: block!important;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .botao-desk{
+      display: block!important;
+    }
+    .botao-mobile{
+      display: none!important;
+    }
+  }
